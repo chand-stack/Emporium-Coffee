@@ -19,7 +19,7 @@ const Coffees = () => {
             <div className='flex justify-center'>
             <Link to="/addcoffee"><button className='btn bg-[#E3B577] border-2 border-[#331A15]'><span className='flex items-center gap-3 text-white'>Add Coffee <GiCoffeeCup className='text-[#331A15]'/></span></button></Link>
             </div>
-            <div className='grid lg:grid-cols-2 gap-6 px-2 md:px-10'>
+            <div className='grid lg:grid-cols-2 gap-6 px-2 md:px-10 container mx-auto'>
                 {
                     coffees?.map(coffe => <Coffe key={coffe?._id} coffe={coffe} setCoffees={setCoffees} coffees={coffees}></Coffe>)
                 }

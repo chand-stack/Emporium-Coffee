@@ -54,7 +54,7 @@ const Coffe = ({coffe,coffees,setCoffees}) => {
                 <p><span className="font-semibold">Price:</span> 890TK</p>
             </div>
             <div className="btn-group space-y-3 btn-group-vertical">
-  <button className="btn bg-[#D2B48C] text-white"><AiFillEye className="text-2xl"/></button>
+  <Link to={`/detail/${_id}`}><button className="btn bg-[#D2B48C] text-white"><AiFillEye className="text-2xl"/></button></Link>
   <Link to={`/update/${_id}`}><button className="btn bg-[#3C393B] text-white"><FaEyeDropper className="text-2xl"/></button></Link>
   <button onClick={()=>deleteHandler(_id)} className="btn bg-[#EA4744] text-white"><MdDelete className="text-2xl"/></button>
 </div>

@@ -22,6 +22,19 @@ const UpdateCoffee = () => {
     const updatedCoffe = {
         name,chef,supplier,taste,category,detail,photo
     }
+
+    fetch(`http://localhost:5000/coffees/${loadedCoffe._id}`,{
+        method:"PUT",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(updatedCoffe)
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+    })
+
     }
 
     return (
