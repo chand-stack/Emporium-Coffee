@@ -40,12 +40,12 @@ const UpdateCoffee = () => {
     return (
         <div className='w-full' style={{backgroundImage:`url(${bg})`, backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
         <div className='container mx-auto'>
-<Link to="/"><p className='lg:text-4xl  md:px-0 md:mx-32 md:text-2xl flex items-center gap-3 py-12'><BsArrowLeft/> Back To Home</p></Link>
+<Link to="/"><p className='lg:text-4xl  md:px-0 md:mx-32 md:text-2xl font-Rancho flex items-center gap-3 py-12'><BsArrowLeft/> Back To Home</p></Link>
 
 <form onSubmit={updateHandler}>
 <div className='bg-[#F4F3F0] p-3 md:p-10 md:mx-32'>
 
-<h1 className='text-center text-2xl md:text-5xl mb-5'>Update Existing Coffee Details</h1>
+<h1 className='text-center text-2xl md:text-5xl font-Rancho mb-5'>Update Existing Coffee Details</h1>
 <p className='text-center md:w-4/5 mx-auto'>It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
 <div className='space-y-4 my-10'>
 
@@ -70,7 +70,7 @@ const UpdateCoffee = () => {
 
 <div className='space-y-3'><h1 className='text-xl font-semibold'>Photo</h1><input defaultValue={loadedCoffe.photo} name='photo' type="text" placeholder="Enter photo URL" className="input w-full" /></div>
 
-<button type='submit' className='btn w-full text-[#331A15] bg-[#D2B48C] border-2 border-[#331A15]'>Add Coffee</button>
+<button type='submit' className='btn w-full text-[#331A15] font-Rancho bg-[#D2B48C] border-2 border-[#331A15]'>Add Coffee</button>
 </div>
 
 

@@ -11,7 +11,7 @@ const Instagram = () => {
     return (
         <div className="container mx-auto mt-28 space-y-4">
             <h1 className='text-center'>Follow Us Now</h1>
-            <h2 className='text-center text-4xl md:text-6xl'>Follow on Instagram</h2>
+            <h2 className='text-center text-4xl md:text-6xl text-[#331A15] font-Rancho'>Follow on Instagram</h2>
 
 <div className='grid grid-cols-2 md:grid-cols-4 gap-3 px-2 mt-10'>
     <img className='mx-auto' src={cup1} alt="" />
